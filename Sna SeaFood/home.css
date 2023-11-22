@@ -1,0 +1,404 @@
+body{
+    background-color: rgba(170, 169, 169, 0.527);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.container{
+    width: 76.7%;
+    box-shadow: 5px 0px 0px 0px rgba(105, 105, 105, 0.644);
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .logo{
+    width: 29%;
+    padding: 20px 60px;
+    height: 83px;
+    cursor: pointer;
+}
+.container .search{
+    width: 60%;
+    height: 50px;
+    padding: 36px 0px;
+    position: relative;
+}
+.container .search input{
+    width: 60%;
+    height: 38px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 70px;
+}
+.container .search i{
+    margin-left: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.container .search i:hover{
+    color: white;
+    transition: 0.3s;
+    background-color: red;
+}
+.container .search .barmenu{
+    position: absolute;
+    right: -18px;
+    top: 35px;
+    display: none;
+}
+.container .search .barmenu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.container .search .barmenu ul li a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    background-color: black;
+    padding: 10px 35px;
+    font-size: 22px;
+    transition: 0.3s;
+}
+.container .search .barmenu ul li a:hover{
+    background-color: red;
+    transition: 0.3s;
+}
+.container .menu{
+    width: 100%;
+}
+.container .menu ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 100px;
+    list-style-type: none;
+}
+.container .menu ul li a{
+    display: block;
+    color: black;
+    background-color: white;
+    padding: 8px 22px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 17px;
+    transition: 0.4s;
+    font-weight: bold;
+}
+.container .menu ul li a:hover{
+    transform: scale(1.15);
+    color: white;
+    background-color: red;
+}
+.container .box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:55px;
+    margin-top: 100px;
+}
+.container .box .item{
+    width: 28%;
+    height: 470px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.container .box .item:hover{
+    transform: scale(1.13);
+    transition: 0.4s;
+}
+.container .box .item .img{
+    width: 100%;
+    height: 55%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.container .box .item .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.container .box .item .text{
+    width: 100%;
+    height: 32%;
+}
+.container .box .item .text h1{
+    color: black;
+    font-size: 32px;
+    padding: 0px 15px;
+    margin: 0;
+}
+.container .box .item .text p{
+    margin: 0;
+    padding: 0px 15px;
+    color: rgba(88, 88, 88, 0.897);
+}
+.container .box .item .price{
+    width: 100%;
+    height: 13%;
+    display: flex;
+}
+.container .box .item .price .luy1{
+    width: 50%;
+    height: 100%;
+}
+.container .box .item .price .luy1 h1{
+    color: rgba(88, 88, 88, 0.897);
+    font-size: 19px;
+    padding-left: 15px;
+}
+.container .box .item .price .luy1 h1 span{
+    color: red;
+    font-size: 27px;
+}
+.container .box .item .price .luy2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+}
+.container .box .item .price .luy2 h1{
+    color: rgba(88, 88, 88, 0.897);
+    font-size: 19px;
+    padding-right: 15px;
+}
+.container .box .item .price .luy2 h1 span{
+    color: red;
+    font-size: 27px;
+}
+.container1{
+    width: 23%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0.3%;
+    position: fixed;
+    right: 0;
+}
+.container1 .setmenu{
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    text-align: center;
+    display: none;
+}
+.container1 .setmenu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container1 .setmenu ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px 36px;
+    font-size: 22px;
+    transition: 0.3s;
+}
+.container1 .setmenu ul li a:hover{
+    background-color: red;
+    transition: 0.3s;
+}
+.container1 .text{
+    width: 83%;
+    height: 40px;
+    margin-top: 30px;
+    padding-bottom: 40px;
+}
+.container1 .text h1{
+    color: black;
+    padding-left: 25px;
+    margin: 0;
+    font-size: 38px;
+}
+.container1 .icon{
+    width: 17%;
+    height: 40px;
+    margin-top: 30px;
+}
+.container1 .icon i{
+    background-color: rgba(105, 105, 105, 0.329);
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.container1 .icon i:hover{
+    background-color: red;
+    transition: 0.3s;
+}
+.container1 .item{
+    width: 100%;
+    display: flex;
+    margin-bottom: 25px;
+}
+.container1 .item .img{
+    width: 50%;
+    height: 160px;
+}
+.container1 .item .img img{
+    width: 88%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 12%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.3s;
+}
+.container1 .item .img img:hover{
+    transform: scale(0.9);
+    transition: 0.3s;
+}
+.container1 .item .de{
+    width: 50%;
+    height: 160px;
+}
+.container1 .item .de .text{
+    width: 100%;
+    height: 88px;
+    margin: 0;
+}
+.container1 .item .de .text h1{
+    font-size: 20px;
+    padding-left:15px ;
+    padding-top: 10px;
+}
+.container1 .item .de .price{
+    width: 100%;
+    height: 80px;
+    margin: 0;
+}
+.container1 .item .de .price ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+    padding-left: 20px;
+}
+.container1 .item .de .price ul li a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-size: 20px;
+}
+.container1 .item .de .price ul li input{
+    width: 30px;
+}
+.container1 .item .de .price ul li a span{
+    padding: 5px;
+    color: white;
+    background-color: red;
+    transition: 0.2s;
+}
+.container1 .item .de .price ul li a span:hover{
+    background-color: greenyellow;
+    color: black;
+    transition: 0.2s;
+    font-size: 15px;
+}
+.container1 .total {
+    width: 90%;
+    margin: auto;
+    background-color: rgba(168, 168, 168, 0.384);
+    display: flex;
+    border-radius: 15px;
+    border-bottom: 2px dashed dimgray;
+
+}
+.container1 .total .tt{
+    width: 70%;
+}
+.container1 .total .tt h1{
+    font-size: 16px;
+    padding-left: 10px;
+    color: rgba(110, 109, 109, 0.979);
+}
+.container1 .total .luy{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+.container1 .total .luy .luy1{
+    width: 5%;
+}
+.container1 .total .luy .luy1 h1{
+    font-size: 16px;
+}
+.container1 .total .luy .luy2{
+    width: 23%;
+}
+.container1 .total .luy .luy2 h1{
+    font-size: 16px;
+}
+.container1 .all{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    background-color: rgba(168, 168, 168, 0.384);
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+    border-top: 2px dashed dimgray;
+}
+.container1 .all .bb{
+    width: 60%;
+}
+.container1 .all .bb input{
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(222,222,222);
+}
+.container1 .all .cc{
+    width: 20%;
+    padding-bottom: 10px;
+    display: flex;
+    margin-left: 50px;
+}
+.container1 .all .cc h1{
+    font-size: 26px;
+    margin-top: 20px;
+}
+.container1 .all .cc span{
+    width: 20%;
+    padding: 10px 0px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    display: none;
+    margin-left: 5px
+}
+
+.container1 .pay{
+    width: 90%;
+    margin: auto;
+}
+.container1 .pay h1{
+    border-radius: 15px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 14.5px 0px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.container1 .pay h1:hover{
+    transition: 0.2s;
+    background-color: yellowgreen;
+}
